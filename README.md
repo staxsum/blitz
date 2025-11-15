@@ -11,7 +11,7 @@ Blitz is a modern, lightning-fast login page bruteforcer written in Go.
 - [x] Intelligent success detection
 - [x] Rate limiting protection
 - [x] Cross-platform (Windows, Linux, macOS)
-- [ ] Browser automation mode
+- [ ] Browser automation
 - [ ] Proxy support
 
 #### Requirements
