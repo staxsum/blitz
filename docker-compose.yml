@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  blitz:
+    build: .
+    image: blitz:latest
+    container_name: blitz
+    volumes:
+      # Mount custom wordlists
+      - ./wordlists:/app/wordlists:ro
+      # Mount results directory
+      - ./results:/app/results
+    environment:
+      - TZ=UTC
+    # Override with your target
+    command: [
+      "-url", "http://example.com/login",
+      "-threads", "5",
+      "-rate", "50"
+    ]
+    restart: "no"
+
+  # Example: DVWA test target
+  dvwa:
+    image: vulnerables/web-dvwa
+    container_name: dvwa-test
+    ports:
+      - "8080:80"
+    environment:
+      - MYSQL_PASS=password
+    restart: unless-stopped
+
+  # Example: Using blitz against DVWA
+  blitz-test:
+    build: .
+    image: blitz:latest
+    container_name: blitz-test
+    depends_on:
+      - dvwa
+    command: [
+      "-url", "http://dvwa/login.php",
+      "-threads", "3",
+      "-rate", "10",
+      "-verbose"
+    ]
+    restart: "no"
+
+networks:
+  default:
+    name: blitz-network

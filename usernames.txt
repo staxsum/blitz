@@ -1,0 +1,24 @@
+# Common usernames for security testing
+# SQL Injection test strings
+'or' '='
+' or true--
+
+# Default accounts
+root
+admin
+test
+guest
+info
+adm
+mysql
+user
+administrator
+oracle
+ftp
+postgres
+webmaster
+backup
+demo
+support
+service
+monitor
