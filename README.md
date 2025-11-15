@@ -120,7 +120,6 @@ This tool is for authorized penetration testing only. Unauthorized access to com
 MIT License
 
 ### Acknowledgments
-- Inspired by Blazy (Python-based bruteforcer)
 - Built with Go for performance and concurrency
 - Thanks to all contributors
 
