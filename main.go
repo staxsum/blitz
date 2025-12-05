@@ -19,7 +19,7 @@ const banner = `
 ╚═════╝ ╚══════╝╚═╝   ╚═╝   ╚══════╝
                                      
   Fast Web Form Cracking
-  https://github.com/lucky89144/blitz
+  https://github.com/moscovium-mc/blitz
 `
 
 var (
