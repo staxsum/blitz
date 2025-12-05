@@ -1,10 +1,6 @@
-# ==============================================
 # Blitz - Modern Login Bruteforcer
-# ==============================================
 
-# ------------------------------------------------------------------
 # CATEGORY 1: SYSTEM & DEFAULT ACCOUNTS
-# ------------------------------------------------------------------
 admin
 administrator
 root
@@ -26,9 +22,7 @@ manager
 hostmaster
 postmaster
 
-# ------------------------------------------------------------------
 # CATEGORY 2: DATABASE & SERVICE ACCOUNTS
-# ------------------------------------------------------------------
 mysql
 postgres
 oracle
@@ -49,9 +43,7 @@ smtp
 pop
 imap
 
-# ------------------------------------------------------------------
 # CATEGORY 3: PLATFORM-SPECIFIC (Cloud, OS, Container)
-# ------------------------------------------------------------------
 # Linux/Unix Systems
 ubuntu
 centos
@@ -81,9 +73,7 @@ git
 gitlab
 github
 
-# ------------------------------------------------------------------
 # CATEGORY 4: APPLICATION & FRAMEWORK ACCOUNTS
-# ------------------------------------------------------------------
 # Web Servers
 nginx
 apache
@@ -114,9 +104,7 @@ production
 beta
 alpha
 
-# ------------------------------------------------------------------
 # CATEGORY 5: BUSINESS/ORGANIZATIONAL ACCOUNTS
-# ------------------------------------------------------------------
 office
 staff
 employee
@@ -135,9 +123,7 @@ partner
 vendor
 supplier
 
-# ------------------------------------------------------------------
 # CATEGORY 6: COMMON FIRST/LAST NAMES (Top 50)
-# ------------------------------------------------------------------
 # Male
 john
 james
@@ -242,9 +228,7 @@ carolyn
 janet
 maria
 
-# ------------------------------------------------------------------
 # CATEGORY 7: EMAIL PATTERNS & COMBINATIONS
-# ------------------------------------------------------------------
 admin@example.com
 administrator@example.com
 root@localhost
@@ -268,9 +252,7 @@ billing.
 help.
 service.
 
-# ------------------------------------------------------------------
 # CATEGORY 8: COMMON VARIATIONS & PATTERNS
-# ------------------------------------------------------------------
 # Case Variations
 Admin
 ADMIN
@@ -319,9 +301,7 @@ admin.server
 admin.database
 admin.security
 
-# ------------------------------------------------------------------
 # CATEGORY 9: COUNTRY/LANGUAGE SPECIFIC
-# ------------------------------------------------------------------
 # Spanish/Portuguese
 administrador
 usuario
@@ -343,9 +323,7 @@ amministratore
 utente
 ospite
 
-# ------------------------------------------------------------------
 # CATEGORY 10: GENERIC & PLACEHOLDER ACCOUNTS
-# ------------------------------------------------------------------
 user1
 user2
 user3
@@ -369,9 +347,7 @@ anonymous
 anon
 nobody
 
-# ------------------------------------------------------------------
 # CATEGORY 11: COMMON ACCOUNT TYPES
-# ------------------------------------------------------------------
 api
 api-user
 service-account
